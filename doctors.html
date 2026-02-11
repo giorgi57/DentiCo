@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ჩვენი ექიმები | საუკეთესო სტომატოლოგები ქუთაისში - DentiCo</title>
+    <meta name="description" content="გაიცანით DentiCo-ს პროფესიონალი სტომატოლოგები ქუთაისში. ნინო გელაშვილი, გიორგი ბერიძე და სხვა გამოცდილი სპეციალისტები თქვენი ღიმილისთვის.">
+    <meta name="keywords" content="სტომატოლოგი ქუთაისი, კბილის ექიმი ქუთაისი, ნინო გელაშვილი, გიორგი ბერიძე, ორთოდონტი ქუთაისი, იმპლანტოლოგი ქუთაისში">
+    
+    <meta property="og:title" content="DentiCo-ს პროფესიონალი ექიმების გუნდი ქუთაისში">
+    <meta property="og:description" content="ენდეთ გამოცდილ სპეციალისტებს. დაჯავშნეთ ვიზიტი ონლაინ DentiCo-ში.">
+    <meta property="og:image" content="images/og-doctors.jpg"> <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>DentiCo</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="index.html#services">სერვისები</a></li>
+                <li><a href="doctors.html" class="active">ჩვენი ექიმები</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+            </ul>
+            <button class="btn-primary" onclick="scrollToBooking()">
+                <i class="fas fa-calendar-check"></i> ჯავშანი
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>ჩვენი გამოცდილი ექიმები ქუთაისში</h1>
+            <p>გაიცანით ჩვენი პროფესიონალი გუნდი</p>
+        </div>
+    </section>
+
+    <section class="doctors-section">
+        <div class="container">
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/foto1.jpg" alt="დრ. სახელი">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>დრ. @@@@ @@@@@@@</h3>
+                        <p class="specialty">სტომატოლოგი-თერაპევტი</p>
+                        <p class="experience">გამოცდილება: 15 წელი</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> თბილისის სამედიცინო უნივერსიტეტი</p>
+                            <p><i class="fas fa-certificate"></i> ევროპული სერტიფიკატი</p>
+                        </div>
+                        <div class="doctor-specialties">
+                            <span>კარიესის მკურნალობა</span>
+                            <span>არხების გაწმენდა</span>
+                            <span>პარადონტოლოგია</span>
+                        </div>
+                        <button class="btn-book" onclick="bookDoctor('დრ. @@@@ @@@@@@@', '+995555000000')">
+                            <i class="fas fa-phone"></i> დარეკვა
+                        </button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                       <img src="images/foto1.jpg" alt="დრ. სახელი">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>დრ. @@@@ @@@@@@@</h3>
+                        <p class="specialty">სტომატოლოგი-ქირურგი</p>
+                        <p class="experience">გამოცდილება: 12 წელი</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> კავკასიის უნივერსიტეტი</p>
+                            <p><i class="fas fa-certificate"></i> ამერიკული სერტიფიკატი</p>
+                        </div>
+                        <div class="doctor-specialties">
+                            <span>იმპლანტაცია</span>
+                            <span>ქირურგია</span>
+                            <span>ძვლის აგება</span>
+                        </div>
+                        <button class="btn-book" onclick="bookDoctor('დრ. @@@@ @@@@@@@', '+995555000000')">
+                            <i class="fas fa-phone"></i> დარეკვა
+                        </button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/foto1.jpg" alt="დრ. სახელი">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>დრ. @@@@ @@@@@@@</h3>
+                        <p class="specialty">ორთოდონტი</p>
+                        <p class="experience">გამოცდილება: 10 წელი</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> თსუ სამედიცინო ფაკულტეტი</p>
+                            <p><i class="fas fa-certificate"></i> გერმანული სერტიფიკატი</p>
+                        </div>
+                        <div class="doctor-specialties">
+                            <span>ბრეკეტები</span>
+                            <span>ინვიზალინი</span>
+                            <span>კბილთა გასწორება</span>
+                        </div>
+                        <button class="btn-book" onclick="bookDoctor('დრ. @@@@ @@@@@@@', '+995555000000')">
+                            <i class="fas fa-phone"></i> დარეკვა
+                        </button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/foto1.jpg" alt="დრ. სახელი">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>დრ. @@@@ @@@@@@@</h3>
+                        <p class="specialty">პროთეზისტი-ორთოპედი</p>
+                        <p class="experience">გამოცდილება: 18 წელი</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> რიგას სტომატოლოგიური უნივერსიტეტი</p>
+                            <p><i class="fas fa-certificate"></i> შვეიცარიული სერტიფიკატი</p>
+                        </div>
+                        <div class="doctor-specialties">
+                            <span>გვირგვინები</span>
+                            <span>ვინირები</span>
+                            <span>პროთეზირება</span>
+                        </div>
+                        <button class="btn-book" onclick="bookDoctor('დრ. @@@@ @@@@@@@', '+995555000000')">
+                            <i class="fas fa-phone"></i> დარეკვა
+                        </button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/foto1.jpg" alt="დრ. სახელი">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>დრ. @@@@ @@@@@@@</h3>
+                        <p class="specialty">ბავშვთა სტომატოლოგი</p>
+                        <p class="experience">გამოცდილება: 8 წელი</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> ივანე ჯავახიშვილის სახელობის უნივერსიტეტი</p>
+                            <p><i class="fas fa-certificate"></i> ბრიტანული სერტიფიკატი</p>
+                        </div>
+                        <div class="doctor-specialties">
+                            <span>ბავშვთა თერაპია</span>
+                            <span>პროფილაქტიკა</span>
+                            <span>ფლუორირება</span>
+                        </div>
+                        <button class="btn-book" onclick="bookDoctor('დრ. @@@@ @@@@@@@', '+995555000000')">
+                            <i class="fas fa-phone"></i> დარეკვა
+                        </button>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="images/foto1.jpg" alt="დრ. სახელი">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>დრ. @@@@ @@@@@@@</h3>
+                        <p class="specialty">ესთეტიკური სტომატოლოგი</p>
+                        <p class="experience">გამოცდილება: 11 წელი</p>
+                        <div class="doctor-details">
+                            <p><i class="fas fa-graduation-cap"></i> ევროპის სტომატოლოგიური აკადემია</p>
+                            <p><i class="fas fa-certificate"></i> საერთაშორისო სერტიფიკატი</p>
+                        </div>
+                        <div class="doctor-specialties">
+                            <span>კბილების გათეთრება</span>
+                            <span>ვინირები</span>
+                            <span>ესთეტიკური კორექცია</span>
+                        </div>
+                        <button class="btn-book" onclick="bookDoctor('დრ. @@@@ @@@@@@@', '+995555000000')">
+                            <i class="fas fa-phone"></i> დარეკვა
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i>
+                        <span>DentiCo</span>
+                    </div>
+                    <p>თქვენი ღიმილის საუკეთესო მზრუნველი ქუთაისში</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>სწრაფი ლინკები</h4>
+                    <ul>
+                        <li><a href="index.html">მთავარი</a></li>
+                        <li><a href="index.html#services">სერვისები</a></li>
+                        <li><a href="doctors.html">ჩვენი ექიმები</a></li>
+                        <li><a href="contact.html">კონტაქტი</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>კონტაქტი</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> ქუთაისი, რუსთაველის გამზ. 45</p>
+                        <p><i class="fas fa-phone"></i> +995 555 000 000</p>
+                        <p><i class="fas fa-envelope"></i> info@dentico.ge</p>
+                        <p><i class="fas fa-clock"></i> ორშ-შაბ: 09:00-19:00</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>სამუშაო საათები</h4>
+                    <div class="working-hours">
+                        <p><span>ორშაბათი - პარასკევი:</span> 09:00 - 19:00</p>
+                        <p><span>შაბათი:</span> 10:00 - 17:00</p>
+                        <p><span>კვირა:</span> დახურულია</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DentiCo Kutaisi..</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

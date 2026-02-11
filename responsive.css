@@ -1,0 +1,213 @@
+/* ტაბლეტი და ქვედა */
+@media (max-width: 1024px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-features {
+        align-items: center;
+    }
+
+    .why-us-content {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* მობილური */
+@media (max-width: 768px) {
+    /* ნავიგაცია */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--shadow);
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 15px 0;
+    }
+
+    .navbar .btn-primary {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+    }
+
+    /* სექციები */
+    .services,
+    .why-us,
+    .doctors-section,
+    .booking-section,
+    .contact-section,
+    .map-section {
+        padding: 50px 0;
+    }
+
+    .section-header h2,
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-us-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-content {
+        padding: 30px 20px;
+    }
+
+    .contact-info-box,
+    .contact-form-box {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links-large {
+        grid-template-columns: 1fr;
+    }
+
+    .emergency-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .emergency-btn {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-info p,
+    .footer-section ul {
+        text-align: left;
+    }
+
+    /* ფორმები */
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* პატარა მობილური */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo i {
+        font-size: 1.7rem;
+    }
+
+    .service-card,
+    .doctor-card {
+        padding: 25px;
+    }
+
+    .page-header {
+        padding: 50px 0;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info-box h2,
+    .contact-form-box h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ლანდშაფტი */
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .nav-menu {
+        top: 60px;
+    }
+}
